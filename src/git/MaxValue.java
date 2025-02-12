@@ -1,19 +1,15 @@
 package git;
 
 public class MaxValue {
-    String maxInt(int ... numbers) {
-        int result = 0;
+    int result;
 
-        if (numbers.length == 0) {
-            return "Чисел нет";
-        }
-
-        for (int i = 0; numbers.length < i; i++) {
-            if (result < numbers[i]) {
-                result = numbers[i];
+    String maxInt(int... numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            if (this.result < numbers[i]) {
+                this.result = numbers[i];
             }
         }
 
-        return "Максимальное число " + result;
+        return "???????????? ????????" + this.result;
     }
 }
