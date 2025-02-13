@@ -7,7 +7,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
 
-
+        //Знакомство с Switch
         String result = switch (num) {
             case 3 ->  "Ok";
             case 2 ->  "Ok";
@@ -19,5 +19,13 @@ public class Main {
             default -> "Non okey";
         };
         System.out.println(result);
+
+        //Знакомство с StringBuilder
+        StringBuilder sb = new StringBuilder();
+        sb.append("lol");
+        sb.append("hhtps://");
+        String str = sb.toString();
+        System.out.println(str);
+        sb.reverse(); //Перевенуть стринг в обратную сторону
     }
 }
