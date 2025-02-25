@@ -1,5 +1,7 @@
 package git;
 
+import java.util.Arrays;
+import java.util.OptionalDouble;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +17,8 @@ public class Main {
 
         WelcomeArray welcomeArray = new WelcomeArray();
         welcomeArray.doSomething(230, 240, 599, 593, 700);
+        welcomeArray.iterateOverArray();
+        welcomeArray.newIterateOverArray();
 
 
         // Экранирование
@@ -28,6 +32,16 @@ public class Main {
                 """; // Тройные кавычки
         System.out.println(textBlock);
         // Экранирование
+
+
+        //Stream API
+        long[] argsNum = {1, 2, 3, 4};
+        double result = Arrays.stream(argsNum).average().orElse(0);
+        Arrays.stream(argsNum).forEach(System.out::println); // Распечатать массив без for
+        //Stream API
+
+        
+
     }
 
 }

@@ -15,6 +15,24 @@ public class WelcomeArray {
 
     void doSomething(int... values){ // ... - если не знаю сколько придет на вход
         int result = values[0] + values[1];
-        System.out.println("Массивы: "+ result);
+        System.out.println("Массивы: " + result);
+    }
+
+
+    void iterateOverArray (){ // Нахождение среднего числа, типично пробежался по массиву - гибки вариант
+        double sum = 0;
+        for (int i = 0; i < numeric.length; i++) {
+            sum = numeric[i] + sum;
+        }
+        System.out.println("Среднее число массива: " + sum / numeric.length);
+    }
+
+    void newIterateOverArray() { // Подходит только для пробежки по коллекции
+        double sum = 0;
+        for (int j : numeric) {
+            sum += j;
+        }
+        System.out.println("Среднее с for-each: " + sum / numeric.length);
+
     }
 }
